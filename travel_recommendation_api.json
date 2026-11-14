@@ -1,0 +1,90 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "cities": [
+        {
+          "name": "Sydney, Australia",
+          "imageUrl": "sydney.jpg",
+          "description": "A vibrant harbour city known for the Sydney Opera House and its golden beaches.",
+          "timeZone": "Australia/Sydney"
+        },
+        {
+          "name": "Melbourne, Australia",
+          "imageUrl": "melbourne.jpg",
+          "description": "A cultural capital with street art, laneway cafes and beautiful gardens.",
+          "timeZone": "Australia/Melbourne"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "cities": [
+        {
+          "name": "Tokyo, Japan",
+          "imageUrl": "tokyo.jpg",
+          "description": "A bustling metropolis that mixes neon skylines with historic temples.",
+          "timeZone": "Asia/Tokyo"
+        },
+        {
+          "name": "Kyoto, Japan",
+          "imageUrl": "kyoto.jpg",
+          "description": "Famous for its classical temples, gardens and traditional tea houses.",
+          "timeZone": "Asia/Tokyo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Brazil",
+      "cities": [
+        {
+          "name": "Rio de Janeiro, Brazil",
+          "imageUrl": "rio.jpg",
+          "description": "Known for its beaches, Carnival festival and the Christ the Redeemer statue.",
+          "timeZone": "America/Sao_Paulo"
+        },
+        {
+          "name": "Sao Paulo, Brazil",
+          "imageUrl": "saopaulo.jpg",
+          "description": "A huge city with world-class food, museums and nightlife.",
+          "timeZone": "America/Sao_Paulo"
+        }
+      ]
+    }
+  ],
+  "temples": [
+    {
+      "id": 1,
+      "name": "Angkor Wat, Cambodia",
+      "imageUrl": "angkorwat.jpg",
+      "description": "A massive 12th-century temple complex and one of the largest religious monuments in the world.",
+      "timeZone": "Asia/Phnom_Penh"
+    },
+    {
+      "id": 2,
+      "name": "Tirupati Balaji Temple, India",
+      "imageUrl": "tirupati.jpg",
+      "description": "One of the most visited temples in the world, set in the hills of Andhra Pradesh.",
+      "timeZone": "Asia/Kolkata"
+    }
+  ],
+  "beaches": [
+    {
+      "id": 1,
+      "name": "Bora Bora, French Polynesia",
+      "imageUrl": "borabora.jpg",
+      "description": "Crystal-clear turquoise water, coral reefs and overwater bungalows.",
+      "timeZone": "Pacific/Tahiti"
+    },
+    {
+      "id": 2,
+      "name": "Copacabana Beach, Brazil",
+      "imageUrl": "copacabana.jpg",
+      "description": "A lively beach in Rio de Janeiro with golden sand, sports and beachside cafes.",
+      "timeZone": "America/Sao_Paulo"
+    }
+  ]
+}
