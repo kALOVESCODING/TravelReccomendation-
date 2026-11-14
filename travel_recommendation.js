@@ -1,6 +1,5 @@
 let travelData = null;
 
-// Task 6: fetch the data
 fetch('travel_recommendation_api.json')
   .then(response => response.json())
   .then(data => {
@@ -9,7 +8,6 @@ fetch('travel_recommendation_api.json')
   })
   .catch(error => console.error('Error loading data:', error));
 
-// Task 7 and 8: keyword search
 function searchRecommendations() {
   const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
   const resultsDiv = document.getElementById('results');
@@ -26,7 +24,6 @@ function searchRecommendations() {
   } else if (keyword.includes('countr')) {
     travelData.countries.forEach(country => matches.push(...country.cities));
   } else {
-    // also allow a country name, like "japan"
     const country = travelData.countries.find(c => c.name.toLowerCase().includes(keyword));
     if (country) matches = country.cities;
   }
@@ -37,18 +34,21 @@ function searchRecommendations() {
   }
 
   matches.forEach(place => {
+    const time = place.timeZone
+      ? new Date().toLocaleTimeString('en-US', { timeZone: place.timeZone, hour12: true })
+      : '';
     const card = document.createElement('div');
     card.className = 'result-card';
     card.innerHTML = `
       <img src="${place.imageUrl}" alt="${place.name}">
       <h3>${place.name}</h3>
       <p>${place.description}</p>
+      ${time ? `<p>Local time: ${time}</p>` : ''}
     `;
     resultsDiv.appendChild(card);
   });
 }
 
-// Task 9: reset
 function resetResults() {
   document.getElementById('results').innerHTML = '';
   document.getElementById('searchInput').value = '';
